@@ -1,0 +1,7 @@
+{
+  "name": "publicidad-app",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
