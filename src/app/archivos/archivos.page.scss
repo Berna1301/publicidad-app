@@ -1,3 +1,4 @@
+
 .contact-container {
   display: flex;
   flex-direction: column;
@@ -13,8 +14,7 @@
   }
 
   ion-card-header {
-    background-color:
-    #56BFBF; /* Color azul para el encabezado */
+    background-color: #56BFBF; /* Color azul para el encabezado */
     color: white; /* Color del texto */
     border-top-left-radius: 15px; /* Bordes redondeados en la parte superior izquierda */
     border-top-right-radius: 15px; /* Bordes redondeados en la parte superior derecha */
@@ -24,11 +24,11 @@
     font-size: 16px; /* Tamaño de fuente base */
     line-height: 1.5; /* Espaciado entre líneas */
     a {
-      color:#56BFBF; /* Color azul para los enlaces */
+      color: #56BFBF; /* Color azul para los enlaces */
       text-decoration: underline; /* Subrayar los enlaces */
     }
-
   }
+
 
 }
 

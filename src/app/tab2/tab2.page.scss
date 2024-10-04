@@ -1,0 +1,57 @@
+/* Asegúrate de que el contenido principal esté centrado */
+ion-content {
+  display: flex; /* Usar flexbox para centrar */
+  flex-direction: column; /* Alinear los elementos en una columna */
+  align-items: center; /* Centrar horizontalmente */
+  justify-content: flex-start; /* Alinear al inicio, para que las tarjetas estén en la parte superior */
+  padding: 16px; /* Espaciado interno para evitar que toquen los bordes */
+}
+
+/* Card */
+ion-card {
+  border-radius: 15px; /* Bordes redondeados */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+  width: 100%; /* Ocupa todo el ancho disponible */
+  max-width: 600px; /* Ancho máximo para pantallas grandes */
+  margin-bottom: 16px; /* Margen inferior para separación */
+  position: relative; /* Asegura que el contenido dentro de la tarjeta esté en su lugar */
+  padding: 16px; /* Agrega un padding interno para el contenido */
+}
+
+/* Estilo para el encabezado */
+ion-card-header {
+  background-color: #56BFBF; /* Color de fondo azul */
+  color: white; /* Color del texto */
+  border-top-left-radius: 15px; /* Bordes redondeados en la parte superior izquierda */
+  border-top-right-radius: 15px; /* Bordes redondeados en la parte superior derecha */
+}
+
+/* Contenido del card */
+ion-card-content {
+  font-size: 16px; /* Tamaño de fuente base */
+  line-height: 1.5; /* Espaciado entre líneas */
+}
+
+/* Estilos responsivos para pantallas más grandes */
+@media (min-width: 768px) {
+  ion-card-content {
+    font-size: 18px; /* Aumenta el tamaño de fuente en pantallas más grandes */
+  }
+}
+
+/* Estilo para el encabezado de la página */
+ion-header {
+  background-color: transparent; /* Asegúrate de que el encabezado sea transparente */
+  color: black; /* Color del texto del encabezado */
+}
+
+ion-toolbar {
+  display: flex; /* Utiliza flexbox para alinear el contenido */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+ion-title {
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+
