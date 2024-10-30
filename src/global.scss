@@ -1,35 +1,41 @@
-/*
- * App Global CSS
- * ----------------------------------------------------------------------------
- * Put style rules here that you want to apply globally. These styles are for
- * the entire app and not just one component. Additionally, this file can be
- * used as an entry point to import other CSS/Sass files to be included in the
- * output CSS.
- * For more information on global stylesheets, visit the documentation:
- * https://ionicframework.com/docs/layout/global-stylesheets
- */
+// src/global.scss
 
 /* Core CSS required for Ionic components to work properly */
 @import "@ionic/angular/css/core.css";
-
-/* Basic CSS for apps built with Ionic */
 @import "@ionic/angular/css/normalize.css";
 @import "@ionic/angular/css/structure.css";
 @import "@ionic/angular/css/typography.css";
 @import "@ionic/angular/css/display.css";
-
-/* Optional CSS utils that can be commented out */
 @import "@ionic/angular/css/padding.css";
 @import "@ionic/angular/css/float-elements.css";
 @import "@ionic/angular/css/text-alignment.css";
 @import "@ionic/angular/css/text-transformation.css";
 @import "@ionic/angular/css/flex-utils.css";
+@import "~leaflet/dist/leaflet.css";
 
-/**
- * Ionic Light Mode
- * -----------------------------------------------------
- * Here, we ensure that no dark mode CSS is included.
- */
+// Importa las variables
+@import './theme/variables';
 
-/* No need to import dark mode styles here */
+body {
+  background-color: #f2f2f2; /* Cambia a tu color deseado */
+  background-image: url('assets/fondo.jpeg');                          /* Cambia la ruta a tu imagen */
+  background-size: cover; /* Ajusta la imagen al tamaño de la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* No repite la imagen */
+}
+ion-content {
+  --background: transparent; /* Asegúrate de que el fondo sea transparente */
+}
+
+
+/* En tu archivo global.scss o en el archivo de estilos de tu componente */
+
+ion-tab-bar {
+  --background: #013440; /* Color de fondo del tab bar */
+  --color-selected: #56BFBF; /* Color del texto e icono seleccionado */
+  --color: #ffffff; /* Color del texto e icono no seleccionado */
+}
+
+
+
 

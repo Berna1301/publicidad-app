@@ -9,13 +9,14 @@
     width: 100%;
     max-width: 600px; /* Ancho máximo para pantallas grandes */
     margin-bottom: 16px; /* Margen inferior para separación */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    background-color: rgba(255, 255, 255, 0.85); /* Blanco con 85% de opacidad */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
     border-radius: 15px; /* Bordes redondeados */
   }
 
   ion-card-header {
-    background-color: #56BFBF; /* Color azul para el encabezado */
-    color: white; /* Color del texto */
+    background-color: #013440 !important;
+  color: #56BFBF !important;
     border-top-left-radius: 15px; /* Bordes redondeados en la parte superior izquierda */
     border-top-right-radius: 15px; /* Bordes redondeados en la parte superior derecha */
   }
@@ -39,5 +40,36 @@ ion-toolbar {
 
 ion-title {
   text-align: center; /* Asegura que el texto esté centrado */
-  flex: 1; /* Permite que el título ocupe el espacio disponible */
+  flex: 1;
+  color: #56BFBF; /* Permite que el título ocupe el espacio disponible */
+}
+
+/* Animación al cargar los cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ion-card {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación hover para iconos */
+.language-icon:hover {
+  transform: scale(1.2); /* Mayor escala al hacer hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.divider {
+  height: 2px;
+  background-color: #56BFBF;
+  width: 80%;
+  margin: 20px auto;
 }

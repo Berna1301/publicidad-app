@@ -1,35 +1,45 @@
 /* Asegúrate de que el contenido principal esté centrado */
 ion-content {
-  display: flex; /* Usar flexbox para centrar */
-  flex-direction: column; /* Alinear los elementos en una columna */
-  align-items: center; /* Centrar horizontalmente */
-  justify-content: center; /* Centrar verticalmente si hay espacio */
-  padding: 16px; /* Espaciado interno para evitar que toquen los bordes */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Banner */
+.banner {
+  background-color: #013440; /* Color del banner */
+  padding: 15px;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #56BFBF; /* Color del texto del banner */
+  font-size: 1.2em;
+  border: 2px solid #56BFBF; /* Borde del banner */
 }
 
 /* Card */
 ion-card {
+  background-color: rgba(255, 255, 255, 0.85); /* Blanco con 85% de opacidad */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
   border-radius: 15px; /* Bordes redondeados */
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-  width: 100%; /* Ocupa todo el ancho disponible */
-  max-width: 600px; /* Ancho máximo para pantallas grandes */
-  margin-bottom: 16px; /* Margen inferior para separación */
-  position: relative; /* Asegura que el contenido dentro de la tarjeta esté en su lugar */
-  padding: 16px; /* Agrega un padding interno para el contenido */
 }
 
-/* Estilo para el encabezado */
+/* Estilo para el encabezado del card */
 ion-card-header {
-  background-color:  #56BFBF; /* Color de fondo azul */
-  color: white; /* Color del texto */
-  border-top-left-radius: 15px; /* Bordes redondeados en la parte superior izquierda */
-  border-top-right-radius: 15px; /* Bordes redondeados en la parte superior derecha */
+  background-color: #013440 !important; /* Fondo del encabezado */
+  color: #56BFBF !important; /* Color de texto */
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  padding: 10px; /* Añade un padding para el título */
+  text-align: center; /* Alineación central del título */
 }
 
 /* Contenido del card */
 ion-card-content {
   font-size: 16px; /* Tamaño de fuente base */
-  line-height: 1.5; /* Espaciado entre líneas */
+  line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
+  color: #333; /* Color del texto para mejor contraste */
 }
 
 /* Estilos responsivos para pantallas más grandes */
@@ -42,30 +52,85 @@ ion-card-content {
 /* Swiper Container */
 swiper-container {
   width: 100%; /* Asegúrate de que el swiper ocupe todo el ancho */
-  height: 300px; /* Establecer una altura fija para que sea más cuadrado */
-  overflow: hidden; /* Asegúrate de que las imágenes no sobresalgan */
+  height: 280px; /* Altura ligeramente reducida para mejor proporción */
   margin-bottom: 16px; /* Margen inferior para separación */
 }
 
 /* Slide */
 swiper-slide {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-/* Imágenes de los slides */
 swiper-slide img {
-  width: 100%; /* Las imágenes ocupan todo el ancho del slide */
-  height: auto; /* Mantiene la proporción de la imagen */
-  max-height: 100%; /* Asegúrate de que las imágenes no excedan la altura del slide */
+  transition: transform 0.5s ease-in-out;
 }
+
+swiper-slide img:hover {
+  transform: scale(1.05); /* Ligeramente más grande cuando se pasa el cursor */
+}
+
+/* Toolbar centrado */
 ion-toolbar {
   display: flex; /* Utiliza flexbox para alinear el contenido */
   justify-content: center; /* Centra horizontalmente */
+  --background: #013440; /* Fondo del toolbar */
 }
 
+/* Título centrado */
 ion-title {
-  text-align: center; /* Asegura que el texto esté centrado */
+  text-align: center;
+  color: #56BFBF; /* Color del texto */
+}
+
+/* Grid para lenguajes de programación */
+.language-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.language-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  text-align: center;
+}
+
+.language-icon img {
+  max-width: 60px;
+  max-height: 60px;
+  margin-bottom: 5px;
+}
+/* Animación al cargar los cards */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+ion-card {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Animación hover para iconos */
+.language-icon:hover {
+  transform: scale(1.2); /* Mayor escala al hacer hover */
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada al hacer hover */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }

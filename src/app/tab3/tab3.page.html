@@ -1,16 +1,7 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="primary">
-    <ion-title>
-      Contáctanos
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Contáctanos</ion-title>
-    </ion-toolbar>
   </ion-header>
 
   <div class="contact-container">
@@ -18,34 +9,36 @@
     <!-- Tarjeta de contacto por correo electrónico -->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>📧 Correo Electrónico</ion-card-title>
+        <ion-card-title style="color: #56BFBF !important;">📧 Correo Electrónico</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Envíanos un correo a <a href="mailto:info&#64;devcourse.com">info&#64;devcourse.com</a></p>
+        <p>Envíanos un correo a <a href="mailto:devcourse98&#64;gmail.com" style="color: #56BFBF; text-decoration: underline;">devcourse98&#64;gmail.com</a></p>
       </ion-card-content>
     </ion-card>
+    <div class="divider"></div>
+
 
     <!-- Tarjeta de contacto telefónico -->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>📞 Teléfono</ion-card-title>
+        <ion-card-title style="color: #56BFBF !important;">📞 Teléfono</ion-card-title>
       </ion-card-header>
       <ion-card-content>
-        <p>Llámanos al <a href="tel:+123456789">+123 456 789</a></p>
+        <p>Llámanos al <a href="tel:+526183017524">618 301 7524</a></p>
       </ion-card-content>
     </ion-card>
-
+    <div class="divider"></div>
     <!-- Tarjeta de contacto por redes sociales -->
     <ion-card>
       <ion-card-header>
-        <ion-card-title>🌐 Redes Sociales</ion-card-title>
+        <ion-card-title style="color: #56BFBF !important;">🌐 Redes Sociales</ion-card-title>
       </ion-card-header>
       <ion-card-content>
         <p>Síguenos en nuestras redes sociales:</p>
         <ul>
           <li>
             <ion-icon name="logo-facebook" slot="start"></ion-icon>
-            <a href="https://www.facebook.com/devcourse">Facebook</a>
+            <a href="https://www.facebook.com/people/Dev-Course/61567410205950/">Facebook</a>
           </li>
           <li>
             <ion-icon name="logo-twitter" slot="start"></ion-icon>
@@ -53,22 +46,29 @@
           </li>
           <li>
             <ion-icon name="logo-instagram" slot="start"></ion-icon>
-            <a href="https://www.instagram.com/devcourse">Instagram</a>
+            <a href="https://www.instagram.com/devcourse98?igsh=eTAxd2JpanNmYW1r">Instagram</a>
           </li>
         </ul>
       </ion-card-content>
     </ion-card>
 
     <!-- Tarjeta de dirección -->
-    <ion-card>
-      <ion-card-header>
-        <ion-card-title>📍 Dirección</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-        <p>Visítanos en:</p>
-        <p>Carr. Durango – Mezquital, Km. 4.5 Gabino Santillán. C.P. 34308, Durango, Dgo.</p>
-      </ion-card-content>
-    </ion-card>
+    <!-- Tarjeta de dirección -->
+    <div class="divider"></div>
+<!-- Tarjeta de dirección -->
+<ion-card>
+  <ion-card-header>
+    <ion-card-title style="color: #56BFBF !important;">📍 Dirección</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+    <p>Visítanos en:</p>
+    <p>Carr. Durango – Mezquital, Km. 4.5 Gabino Santillán. C.P. 34308, Durango, Dgo.</p>
+
+    <!-- Mapa -->
+    <div id="map" style="height: 300px; width: 100%;"></div>
+  </ion-card-content>
+</ion-card>
+
 
   </div>
 

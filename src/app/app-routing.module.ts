@@ -9,7 +9,7 @@ const routes: Routes = [
   {
     path: 'archivos',
     loadChildren: () => import('./archivos/archivos.module').then( m => m.ArchivosPageModule)
-  }
+  },
 ];
 @NgModule({
   imports: [

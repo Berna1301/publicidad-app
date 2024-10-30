@@ -1,15 +1,13 @@
-<ion-header>
-  <ion-toolbar color="primary">
-
-      <ion-title>Home</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
+  <!-- Banner publicitario inicial -->
+  <div class="banner">
+    ¡Aprovecha nuestras promociones especiales! 🚀 Hasta 30% de descuento en tu primer proyecto.
+  </div>
+
   <!-- Card sobre el carrusel -->
   <ion-card>
     <ion-card-header>
-      <ion-card-title>Bienvenido a Dev Course!</ion-card-title>
+      <ion-card-title style="color: #56BFBF !important;">Bienvenido a Dev Course!</ion-card-title>
     </ion-card-header>
     <ion-card-content>
       🚀 ¡Construye tu éxito con Dev Course! <br />
@@ -21,25 +19,100 @@
         [loop]="true"
         [pagination]="true"
         [autoplay]="{ delay: 3000, disableOnInteraction: false }"
-        style="margin-top: 8px; width: 100%; height: auto;"> <!-- Espaciado adicional para el carrusel -->
-
+        style="margin-top: 8px; width: 100%; height: auto;">
         <!-- Slide 1 con imagen -->
         <swiper-slide>
           <img src="assets/imagen3.jpg" alt="Imagen 1" style="width: 100%; height: auto;">
         </swiper-slide>
 
         <!-- Slide 2 con imagen -->
-        <swiper-slide>
-          <img src="assets/imagen1.png" alt="Imagen 2" style="width: 100%; height: auto;">
-        </swiper-slide>
-
-        <!-- Slide 3 con imagen -->
-        <swiper-slide>
-          <img src="assets/logo.png" alt="Imagen 3" style="width: 100%; height: auto;">
+      <swiper-slide>
+          <img src="assets/logo_processed.png" alt="Imagen 2" style="width: 100%; height: auto;">
         </swiper-slide>
       </swiper-container>
 
+      <!-- Botón CTA (Call to Action) -->
+      <ion-button expand="block" shape="round">¡Contáctanos Hoy!</ion-button>
     </ion-card-content>
   </ion-card>
 
+  <!-- Sección de lenguajes de programación -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="color: #56BFBF !important;">Lenguajes de Programación</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <div class="language-grid">
+        <!-- Fila superior -->
+        <div class="row upper-row">
+          <div class="language-icon">
+            <img src="assets/js.png" alt="JavaScript" title="JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="language-icon">
+            <img src="assets/piton.png" alt="Python" title="Python">
+            <p>Python</p>
+          </div>
+          <div class="language-icon">
+            <img src="assets/java.png" alt="Java" title="Java">
+            <p>Java</p>
+          </div>
+        </div>
+        <!-- Fila inferior -->
+        <div class="row lower-row">
+          <div class="language-icon">
+            <img src="assets/archivos.png" alt="C#" title="C#">
+            <p>C#</p>
+          </div>
+          <div class="language-icon">
+            <img src="assets/rubi.png" alt="Ruby" title="Ruby">
+            <p>Ruby</p>
+          </div>
+          <div class="language-icon">
+            <img src="assets/ts.png" alt="TypeScript" title="TypeScript">
+            <p>TypeScript</p>
+          </div>
+        </div>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Sección de servicios -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="color: #56BFBF !important;">Nuestros Servicios</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Ofrecemos una amplia gama de servicios, incluyendo:
+      <ul>
+        <li>Desarrollo de aplicaciones web y móviles</li>
+        <li>Integración de sistemas y APIs</li>
+        <li>Consultoría en tecnologías de la información</li>
+        <li>Soporte y mantenimiento de software</li>
+      </ul>
+      <ion-button expand="block" shape="round">Descubre Más</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Banner publicitario intermedio -->
+  <div class="banner">
+    ¡Invierte en tu futuro! 🚀 Regístrate ahora y obtén un descuento del 15% en nuestra próxima capacitación.
+  </div>
+
+  <!-- Sección de testimonios -->
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title style="color: #56BFBF !important;">Testimonios de Clientes</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>"Dev Course me ayudó a llevar mi idea a la realidad. ¡Su equipo es increíble!" - Ana P.</p>
+      <p>"Gracias a Dev Course, mi negocio está en línea y funcionando perfectamente." - Luis R.</p>
+      <ion-button expand="block" shape="round">Leer Más Testimonios</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <!-- Banner publicitario final -->
+  <div class="banner">
+    ¡No esperes más! Contáctanos y transforma tu idea en realidad con Dev Course.
+  </div>
 </ion-content>
