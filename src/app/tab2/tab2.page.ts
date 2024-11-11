@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';// Asegúrate de importar Router
 
 @Component({
   selector: 'app-tab2',
@@ -69,8 +70,7 @@ export class Tab2Page {
     ],
     additionalInfo: "Nuestras aplicaciones están diseñadas para cautivar a los usuarios y mejorar la retención."
   };
-
-  constructor() {}
+  constructor(private router: Router) {}
 
   // Función para abrir el modal
   openModal(serviceInfo: any) {
@@ -81,5 +81,8 @@ export class Tab2Page {
   // Función para cerrar el modal
   closeModal() {
     this.isModalOpen = false; // Cierra el modal
+  }
+  navigateToTab2() {
+    this.router.navigate(['/tabs/tab2']);
   }
 }

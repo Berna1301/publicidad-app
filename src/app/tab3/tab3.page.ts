@@ -1,5 +1,6 @@
 import { Component, AfterViewInit } from '@angular/core';
 import * as L from 'leaflet';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-tab3',
@@ -13,7 +14,7 @@ export class Tab3Page implements AfterViewInit {
 
   private map: any;
 
-  constructor() {}
+  constructor(private router: Router) {} // Inyecta el servicio Router
 
   ngAfterViewInit() {
     this.initializeMap();
@@ -52,5 +53,9 @@ export class Tab3Page implements AfterViewInit {
     setTimeout(() => {
       this.map.invalidateSize();
     }, 100);
+  }
+
+  navigateToTab3() {
+    this.router.navigate(['/tabs/tab3']);
   }
 }
