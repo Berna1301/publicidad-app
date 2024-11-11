@@ -4,6 +4,7 @@ ion-content {
   flex-direction: column;
   align-items: center;
   padding: 16px;
+
 }
 
 /* Banner */
@@ -37,10 +38,14 @@ ion-card-header {
 
 /* Contenido del card */
 ion-card-content {
-  font-size: 16px; /* Tamaño de fuente base */
+  font-size: 18px; /* Tamaño de fuente base */
   line-height: 1.6; /* Espaciado entre líneas para mejor legibilidad */
   color: #333; /* Color del texto para mejor contraste */
 }
+p{
+  font-size: 18px;
+}
+
 
 /* Estilos responsivos para pantallas más grandes */
 @media (min-width: 768px) {
